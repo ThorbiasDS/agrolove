@@ -5,5 +5,9 @@ public abstract class Animal {
     protected String porte;
     protected boolean vacinado;
 
+    public Animal(){
+        this.vacinado = false;
+    }
+
     public abstract void comer();
 }
