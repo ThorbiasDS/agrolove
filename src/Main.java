@@ -41,5 +41,6 @@ public class Main {
                     System.out.println("Opção inválida!");
             }
         } while (opcao != 0);
+        scanner.close();
     }
 }
