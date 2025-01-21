@@ -5,11 +5,11 @@ public abstract class Animal {
     private String porte;
     private boolean vacinado;
 
-    public Animal(){
+    public Animal() {
         this.vacinado = false;
     }
 
-    public Animal(int identificacao, float peso, int idade, String porte, boolean vacinado){
+    public Animal(int identificacao, float peso, int idade, String porte, boolean vacinado) {
         this.identificacao = identificacao;
         this.peso = peso;
         this.idade = idade;
@@ -19,19 +19,19 @@ public abstract class Animal {
 
     public abstract void comer();
 
-    public int getIdentificacao(){
+    public int getIdentificacao() {
         return this.identificacao;
     }
 
-    public void setIdentificacao(int identificacao){
+    public void setIdentificacao(int identificacao) {
         this.identificacao = identificacao;
     }
 
-    public float getPeso(){
+    public float getPeso() {
         return peso;
     }
 
-    public void setPeso(float peso){
+    public void setPeso(float peso) {
         this.peso = peso;
     }
 
@@ -60,12 +60,12 @@ public abstract class Animal {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Este animal tem: \n" +
-        "Identificação: " + this.identificacao + 
-        ", peso: " + this.peso +
-        ", idade: " + this.idade +
-        ", porte: " + this.porte +
-        ", vacinação: " + this.vacinado;
+                "Identificação: " + this.identificacao +
+                ", peso: " + this.peso +
+                ", idade: " + this.idade +
+                ", porte: " + this.porte +
+                ", vacinação: " + this.vacinado;
     }
 }

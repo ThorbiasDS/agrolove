@@ -1,23 +1,23 @@
-public class Vaca extends Animal{
+public class Vaca extends Animal {
 
     private boolean leiteProduzido;
 
-    public Vaca(){
+    public Vaca() {
         super();
         this.leiteProduzido = false;
     }
 
-    public Vaca(int identificacao, float peso, int idade, String porte, boolean vacinado, boolean leiteProduzido){
+    public Vaca(int identificacao, float peso, int idade, String porte, boolean vacinado, boolean leiteProduzido) {
         super(identificacao, peso, idade, porte, vacinado);
         this.leiteProduzido = leiteProduzido;
     }
 
-    public void parir(){
+    public void parir() {
         System.out.println("Um novo bezerro chegou à fazenda!");
         this.leiteProduzido = true;
     }
 
-    public void comer(){
+    public void comer() {
         System.out.println("Alimantando a vaquinha");
         super.setPeso((float) (super.getPeso() + 0.50));
     }
@@ -31,8 +31,8 @@ public class Vaca extends Animal{
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return super.toString() +
-        ", leite produzido: " + this.leiteProduzido;
+                ", leite produzido: " + this.leiteProduzido;
     }
 }

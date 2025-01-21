@@ -1,8 +1,8 @@
-public class Veterinario extends Usuario{
+public class Veterinario extends Usuario {
     private int animaisParaCuidar;
     private Vacinacao vacinacao;
 
-    public void aplicarVacina(Animal animal, Vacina vacina){
+    public void aplicarVacina(Animal animal, Vacina vacina) {
         Vacinacao vac = new Vacinacao();
         vac.setVacina(vacina);
         vac.setAnimal(animal);
