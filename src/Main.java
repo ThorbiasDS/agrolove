@@ -7,10 +7,18 @@ public class Main {
 
         while (controle != 0) {
             System.out.println("Bem-vindo ao AgroLove!");
-            System.out.println("Escolha uma opção: ");
-            System.out.println("0 - Sair do programa");
-            Scanner scanner = new Scanner(System.in);
-            controle = scanner.nextInt();
+            System.out.println("Entre no programa utilizando login e senha:");
+
+            System.out.print("Login: ");
+            Scanner login = new Scanner(System.in);
+            String log = login.next();
+            System.out.print("Senha: ");
+            Scanner senha = new Scanner(System.in);
+            String sen = senha.next();
+
+            if(log == "0" || sen == "0"){
+                controle = 0;
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ public class Veterinario extends Usuario{
         Vacinacao vac = new Vacinacao();
         vac.setVacina(vacina);
         vac.setAnimal(animal);
-        vac.getAnimal().vacinado = true;
+        vac.getAnimal().setVacinado(true);
     }
 
     public int getAnimaisParaCuidar() {
